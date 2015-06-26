@@ -1,6 +1,8 @@
 pylint-werkzeug
 ===============
 
+[![Build Status](https://travis-ci.org/jschaf/pylint-werkzeug.svg?branch=master)](https://travis-ci.org/jschaf/pylint-werkzeug)
+
 ## About
 
 `pylint-werkzeug` is [Pylint](http://pylint.org) plugin for improving code
