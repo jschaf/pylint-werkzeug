@@ -12,13 +12,6 @@ _short_description = "pylint-werkzeug is a Pylint plugin to aid Pylint in recogn
                      "errors caused when using Werkzeug"
 
 
-_transform_dir = 'pylint_werkzeug/transforms/transforms'
-_package_data = {
-    'pylint_werkzeug': [
-        os.path.join('transforms/transforms', name) for name in os.listdir(_transform_dir)
-    ]
-}
-
 _classifiers = (
     'Development Status :: 4 - Beta',
     'Environment :: Console',
@@ -58,7 +51,6 @@ setup(
     description=_short_description,
     version=_version,
     packages=_packages,
-    package_data=_package_data,
     install_requires=_install_requires,
     license='GPLv2',
     classifiers=_classifiers,
