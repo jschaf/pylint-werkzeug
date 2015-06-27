@@ -1,7 +1,7 @@
 pylint-werkzeug
 ===============
 
-[![Build Status](https://travis-ci.org/jschaf/pylint-werkzeug.svg?branch=master)](https://travis-ci.org/jschaf/pylint-werkzeug)
+[![Build Status](https://travis-ci.org/jschaf/pylint-werkzeug.svg?branch=master)](https://travis-ci.org/jschaf/pylint-werkzeug) [![Coverage Status](https://coveralls.io/repos/jschaf/pylint-werkzeug/badge.svg)](https://coveralls.io/r/jschaf/pylint-werkzeug)
 
 ## About
 
