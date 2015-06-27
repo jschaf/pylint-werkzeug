@@ -6,7 +6,8 @@ pylint-werkzeug
 ## About
 
 `pylint-werkzeug` is [Pylint](http://pylint.org) plugin for improving code
-analysis when editing code using [Werkzeug](http://werkzeug.pocoo.org/). 
+analysis when editing code using [Werkzeug](http://werkzeug.pocoo.org/).
+Inspired by [pylint-django](https://github.com/landscapeio/pylint-django).
 
 ## Usage
 
