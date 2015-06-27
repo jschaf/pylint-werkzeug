@@ -7,7 +7,9 @@ from pylint.testutils import make_tests, LintTestUsingFile, cb_test_gen, linter
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 linter.load_plugin_modules(['pylint_werkzeug'])
-linter.global_set_option('required-attributes', ())  # remove required __revision__
+# remove required __revision__
+linter.global_set_option('required-attributes', ())
+
 
 def module_exists(module_name):
     try:
@@ -16,6 +18,7 @@ def module_exists(module_name):
         return False
     else:
         return True
+
 
 def tests(input_dir, messages_dir):
     callbacks = [cb_test_gen(LintTestUsingFile)]
@@ -32,8 +35,9 @@ def suite():
     if module_exists('rest_framework'):
         test_list += tests('external_drf', '')
 
-    return testlib.TestSuite([unittest.makeSuite(test, suiteClass=testlib.TestSuite)
-                              for test in test_list])
+    return testlib.TestSuite(
+        [unittest.makeSuite(test, suiteClass=testlib.TestSuite)
+         for test in test_list])
 
-if __name__=='__main__':
+if __name__ == '__main__':
     testlib.unittest_main(defaultTest='suite')
